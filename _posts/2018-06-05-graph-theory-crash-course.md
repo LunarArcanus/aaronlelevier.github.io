@@ -20,9 +20,9 @@ In the below graph. Each number is a node. Each line connecting them is an edge.
 
 ## Nodes
 
-A [node](https://en.wikipedia.org/wiki/Vertex_(graph_theory)) is a connected object in the graph. They can also called a *vertex* (singular) or *vertices* (plural).
+A [node](https://en.wikipedia.org/wiki/Vertex_(graph_theory)) is a connected object in the graph. They can also be called a *vertex* (singular) or *vertices* (plural).
 
-Nodes should have a unique identifier, such as a name or id. They can also store any other amout of arbitrary information. In a social graph, for example, a node would be a person. In a computer network, different machines would be nodes, their IP address or host name could be a unique identifier of the node.
+Nodes should have a unique identifier, such as a name or id. They can also store any other amount of arbitrary information. In a social graph, for example, a node would be a person. In a computer network, different machines would be nodes, while their IP address or host name could be a unique identifier of the node.
 
 ## Edges
 
@@ -58,7 +58,7 @@ There are two main types of graphs. Undirected and Directed. This section discus
 
 ![Imgur](https://i.imgur.com/Kt78Dph.jpg)
 
-[Undirected graphs](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)#Undirected_graph) are connected graphs, but their is no direction to those connections. There isn't a direction though between the nodes.
+[Undirected graphs](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)#Undirected_graph) are connected graphs, but there is no direction to those connections. There isn't a direction between the nodes.
 
 An example of this is **LinkedIn**. People have connections, or edges in graph theory terminology, but there is not direction to the relationships.
 
@@ -88,7 +88,7 @@ An example of this is Twitter. In Twitter you can follow someone, and they can f
 
 # Graph Data Structures
 
-There are many types of data structures that can be used with graphs and server different purposes for storing graph information for performant lookups.
+There are many types of data structures that can be used with graphs and serve different purposes for storing graph information for performant lookups.
 
 ## Adjacency Matrix
 
@@ -96,7 +96,7 @@ There are many types of data structures that can be used with graphs and server 
 
 An [adjacency matrix](https://en.wikipedia.org/wiki/Adjacency_matrix) is a square matrix that tells which nodes are connected by displaying a `1` if connected, or `0` if not connected.
 
-In an *undirected* graph, as the above pictures, this matrix is symmetric.
+In an *undirected* graph, as the above pictures show, this matrix is symmetric.
 
 For *directed graphs*, the adjacency matrix will have a `1` denoting the direction of the incoming edge, otherwise `0`, so the matrix is most likely not symmetric.
 
@@ -119,21 +119,21 @@ Can you take any random grid and also random sequence and comput this?
 
 This can be solved by loading the random 3x3 data into an *adjacency matrix*. The adjacent positions in the grid are connections, or `1`'s, otherwise they are `0`'s. Then this data structure is used as a lookup to solve how many steps it takes.
 
-And *adjacency list* could also be used.
+An *adjacency list* could also be used.
 
 ## Degree Matrix
 
 ![Imgur](https://i.imgur.com/LjEt3p3.png)
 
-A [degree matrix](https://en.wikipedia.org/wiki/Degree_matrix) is a diagonal matrix that says the degree of the vertices. The degree of a vertex is the number of it's incidence edges. The vertices are plotted on the rows and columns.
+A [degree matrix](https://en.wikipedia.org/wiki/Degree_matrix) is a diagonal matrix that says the degree of the vertices. The degree of a vertex is the number of its incidence edges. The vertices are plotted on the rows and columns.
 
-In the above matrix, vertex `1` in the top left most position has a degree of `4` *incidence edges*, edge `2` has degree of `3`, and so on.
+In the above matrix, vertex `1` in the top left most position has a degree of `4` *incidence edges*, vertex `2` has a degree of `3`, and so on.
 
 ## Incidence Matrix
 
 ![Imgur](https://i.imgur.com/hWR9bX0.png)
 
-### Inidence Matrix of above graph
+### Incidence Matrix of above graph
 
 The columns are the edges, and the rows are the nodes. Edge `e1` in column `1` is the incidence edge of vertices `{1,2}`, `e2` is the incidence edge for vertices `{1,3}`, and so on.
 
@@ -152,7 +152,7 @@ Incidence matrices are square if the number of vertices equals the number of nod
 
 For *unidirectional graphs* these are represented with a `-1` for outgoing edges, `1` for incoming edges, otherwise `0`.
 
-For a *bidirectional graph* they follow the same rules as a unidirectional incidence matrix, except for incoming and outgoing endges between nodes, the data is represented by a `2`
+For a *bidirectional graph* they follow the same rules as a unidirectional incidence matrix, except for incoming and outgoing edges between nodes, the data is represented by a `2`
 
 ## Adjacency List
 
@@ -160,7 +160,7 @@ For a *bidirectional graph* they follow the same rules as a unidirectional incid
 
 ### Adjacency list of the above graph
 
-The rows represent a node and the columns are the connected nodes values.
+The rows represent a node and the columns are the connected node values.
 
 ```
 [[2, 3, 4],
@@ -169,7 +169,7 @@ The rows represent a node and the columns are the connected nodes values.
  [1, 3]]
 ```
 
-An [adjacency list](https://en.wikipedia.org/wiki/Adjacency_list) is a list of nodes' adjancent nodes. The first element, `[2, 3, 4]`, is node `1`'s adjacent nodes, the second element, `[1]`, is node `2`'s adjacent nodes, and so on.
+An [adjacency list](https://en.wikipedia.org/wiki/Adjacency_list) is a list of nodes' adjacent nodes. The first element, `[2, 3, 4]`, is node `1`'s adjacent nodes, the second element, `[1]`, is node `2`'s adjacent nodes, and so on.
 
 # Continued Reading
 
@@ -179,11 +179,11 @@ An [adjacency list](https://en.wikipedia.org/wiki/Adjacency_list) is a list of n
 
 [Neo4j Graph Algorithms](https://github.com/neo4j-contrib/neo4j-graph-algorithms)
 
-- Neo4j at the time of this writing has 300+ algorithms for use with it's graph database
+- Neo4j at the time of this writing has 300+ algorithms for use with its graph database
 
 [Directed Acyclic Graphs](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 
-- These are one particularly interesting naturally occuring type of *unidirectional graph* that is used in project management, and there are software frameworks that implement them as well.
+- These ones are particularly interesting naturally occurring type of *unidirectional graph* that is used in project management, and there are software frameworks that implement them as well.
 
 ## Example Graph Project
 
@@ -197,7 +197,7 @@ This is from a demo project that I did. It's a *Bidirectional Graph* of my Githu
 
 Graphs are very interesting. They appear in so many places like social networks, machine learning, decision trees, and a lot more. This is really just a quick introduction. There are many sub-types of graphs within the above three main categories of graphs mentioned.
 
-This research was originally part of my pre-research in order to learn more about graphs before trying out [Neo4j](https://neo4j.com/), the largest graph database platform. I first saw Neo4j as recommended experience to have on a job posting, and I didn't know what it was, so I started to look into it. This research was in my spiral notebook, so now it's public for other's if they're intersted.
+This research was originally part of my pre-research in order to learn more about graphs before trying out [Neo4j](https://neo4j.com/), the largest graph database platform. I first saw Neo4j as recommended experience to have on a job posting, and I didn't know what it was, so I started to look into it. This research was in my spiral notebook, so now it's public for others if they're interested.
 
 Thank you for reading. Happy coding!
 
